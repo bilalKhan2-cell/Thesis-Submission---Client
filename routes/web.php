@@ -17,7 +17,7 @@ use App\Livewire\Profile;
 use App\Livewire\Welcome;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', Welcome::class)->name('teams.login');
+Route::get('/', TeamLogin::class)->name('teams.login');
 Route::get('/supervisor/login', SupervisorLogin::class)->name('supervisors.login');
 Route::get('/change-password',ChangePassword::class)->name('change.password');
 

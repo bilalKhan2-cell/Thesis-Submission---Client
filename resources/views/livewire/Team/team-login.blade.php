@@ -1,15 +1,19 @@
 <div>
     <nav class="navbar navbar-example navbar-expand-lg navbar-dark bg-warning">
         <div class="container-fluid">
-            <a class="navbar-brand" href="javascript:void(0)"><b>Sindh University Online Thesis Submission Portal..</b></a>
+            <a class="navbar-brand"
+                href="javascript:void(0)"><b>{{ __('Sindh University Online Thesis Submission Portal..') }}</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-ex-2"
                 aria-controls="navbar-ex-2" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar-ex-2">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-item nav-link" href="{{route('supervisors.login')}}" wire:navigate>Supervisor</a>
-                    <a class="nav-item nav-link" href="{{route('teams.login')}}" wire:navigate>Team</a>
+                    <a class="nav-item nav-link" href="{{ route('supervisors.login') }}"
+                        wire:navigate>{{ __('Supervisor') }}</a>
+                    <a class="nav-item nav-link" href="{{ route('teams.login') }}" wire:navigate>{{ __('Team') }}</a>
+                    <a class="nav-item nav-link" href="{{ route('members.page') }}"
+                        wire:navigate>{{ __('Team Members Details') }}</a>
                 </div>
 
             </div>
@@ -40,8 +44,9 @@
                     <form id="formAuthentication" class="mb-3" wire:submit.prevent="LoginUser">
                         <div class="mb-3">
                             <label for="email" class="form-label">Email Or RollNo: </label>
-                            <input type="text" wire:model="email" wire:model="email" class="form-control text-primary" id="email"
-                                name="email-username" placeholder="Enter your email or username" autofocus />
+                            <input type="text" wire:model="email" wire:model="email"
+                                class="form-control text-primary" id="email" name="email-username"
+                                placeholder="Enter your email or username" autofocus />
                         </div>
                         <div class="mb-3 form-password-toggle">
                             <div class="d-flex justify-content-between">

@@ -35,10 +35,10 @@
                     <li><a class="nav-link scrollto" href="{{route('members.page')}}" wire:navigate>{{ __('Team Member Login') }}</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
+            </nav>
 
         </div>
-    </header><!-- End Header -->
+    </header>
 
     <main id="main">
         <section id="about" class="about">
